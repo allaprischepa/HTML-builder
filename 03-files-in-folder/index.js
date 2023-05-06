@@ -1,4 +1,3 @@
-//import { readdir } from 'node:fs/promises';
 const fs = require('fs');
 const { readdir, stat } = require('fs/promises');
 const path = require('path');
@@ -10,7 +9,7 @@ const directoryPath = path.join(__dirname, 'secret-folder');
  * @returns
  */
 const convertBytes = (bytes) => {
-  const measures = ['Bytes', 'kB', 'mB', 'gB', 'tB'];
+  const measures = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
   const denominator = 1000;
 
   if (bytes == 0) {
