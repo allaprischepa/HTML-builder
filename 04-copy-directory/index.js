@@ -14,6 +14,11 @@ fs.access(sourcePath, fs.constants.R_OK, (err) => {
   copyDir(sourcePath, destinationPath);
 });
 
+/**
+ * Copy directory.
+ * @param {*} sourcePath
+ * @param {*} destinationPath
+ */
 async function copyDir(sourcePath, destinationPath) {
   try {
 
